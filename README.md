@@ -28,3 +28,11 @@ The Beginning of Everything
    ```bash
    $ ssh <user@>server
    ```
+
+## interactive shell - bash
+```bash
+$ export TERM=xterm
+
+$ export PS1='\[\033[1;31m\]$(date +%Y.%m.%d) \t\[\033[00m\] | \[\033[32;40m\]\u@\h:$(pwd)\[\033[00m\]\n$ ' || \
+> export PS1='\[\033[1;38;5;196;48;5;234m\]\D{%Y.%m.%d} \t\[\033[0m\] | \[\033[1;38;5;28;48;5;234m\]\u@\h:$(pwd)\[\033[0m\]\n$ '
+```
